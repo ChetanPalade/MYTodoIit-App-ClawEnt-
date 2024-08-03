@@ -4,7 +4,7 @@ import Home from './component/home/Home';
 import Footer from './component/footer/Footer';
 import About from './component/about/About';
 import Signup from './component/signup/Signup';
-import LogIn from './component/signup/LogIn';
+import LogIn from './component/signup/SignIn';
 import Todo from "./component/todo/Todo";
 import { useDispatch } from 'react-redux';
 import { authActions }  from "./store";
@@ -29,7 +29,7 @@ const App = () => {
           <Route path="/about" element={<About />}/>
           <Route path="/signup" element={<Signup />}/>
           <Route path="/todo" element={<Todo />}/>
-          <Route path="/login" element={<LogIn />}/>
+          <Route path="/login" element={<SignIn />}/>
         </Routes>
       </Router>
       <Footer />
